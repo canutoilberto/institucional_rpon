@@ -1,17 +1,24 @@
 import { Text, Container, Image } from "@mantine/core";
+import { useColorScheme } from "@mantine/hooks";
 import { Link } from "react-scroll";
 import classes from "./footer.module.css";
 
-import logomarca from "assets/img/icons/intranet_logo1_branca.png";
+import logoLight from "assets/img/icons/logo_svg_white.svg";
+import logoDark from "assets/img/icons/logo_svg_dark.svg";
 
 const currentYear = new Date().getFullYear();
 
 const Footer = () => {
+  const colorScheme = useColorScheme();
+
   return (
     <footer className={classes.footer}>
       <Container className={classes.inner}>
         <div className={classes.logo}>
-          <Image src={logomarca} alt="Logomarca da Rede Paraíba online" />
+          <Image
+            src={colorScheme === "dark" ? `${logoLight}` : `${logoDark}`}
+            alt="Logomarca da Rede Paraíba online"
+          />
           <Text size="xs" c="dimmed" className={classes.description}>
             Nossa ética, nossa conduta
           </Text>
