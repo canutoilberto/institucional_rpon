@@ -1,0 +1,81 @@
+.root {
+  background-color: #11284b;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(127deg, #062343 0%, rgba(130, 201, 30, 0) 80%),
+    url("https://www.compleo.com.br/_next/image?url=https%3A%2F%2Fheadlessblog.compleo.app%2Fwp-content%2Fuploads%2F2021%2F01%2Fengajamento-de-funcionarios-e-outros-desafios-da-gestao-de-pessoas-como-superar.jpeg&w=1920&q=75");
+  padding-top: calc(var(--mantine-spacing-xl) * 6);
+  padding-bottom: calc(var(--mantine-spacing-xl) * 7);
+
+  @media(max-width: $mantine-breakpoint-sm) {
+    padding-top: calc(var(--mantine-spacing-md) * 8);
+    padding-bottom: calc(var(--mantine-spacing-md) * 7);
+  }
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+
+  @media(max-width: $mantine-breakpoint-md) {
+    flex-direction: column;
+  }
+}
+
+.image {
+  @media(max-width: $mantine-breakpoint-md) {
+    display: none;
+  }
+}
+
+.content {
+  padding-top: calc(var(--mantine-spacing-xl) * 2);
+  padding-bottom: calc(var(--mantine-spacing-xl) * 2);
+  margin-right: calc(var(--mantine-spacing-xl) * 3);
+
+  @media (max-width: $mantine-breakpoint-md) {
+    margin-right: 0;
+  }
+}
+
+.title {
+  color: var(--mantine-color-white);
+  font-family:
+    Greycliff CF,
+    var(--mantine-font-family);
+  font-weight: 900;
+  line-height: 1.05;
+  max-width: rem(500px);
+  font-size: rem(38px);
+
+  @media (max-width: $mantine-breakpoint-md) {
+    max-width: 100%;
+    font-size: rem(34px);
+    line-height: 1.15;
+  }
+}
+
+.description {
+  color: var(--mantine-color-white);
+  opacity: 0.75;
+  max-width: rem(500px);
+  font-weight: 600;
+
+  @media (max-width: $mantine-breakpoint-md) {
+    max-width: 100%;
+    font-size: rem(14px);
+  }
+}
+
+.control {
+  padding-left: rem(50px);
+  padding-right: rem(50px);
+  font-family:
+    Greycliff CF,
+    var(--mantine-font-family);
+  font-size: rem(22px);
+
+  @media (max-width: $mantine-breakpoint-md) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,10 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media(max-width: $mantine-breakpoint-sm) {
+    display: flex;
+    align-items: center;
+  }
+}

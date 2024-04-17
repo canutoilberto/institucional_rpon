@@ -1,0 +1,109 @@
+.text {
+  text-align: justify;
+  font-size: rem(20px);
+  font-weight: rem(600);
+}
+
+.buttonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.innerTitle {
+  font-weight: 500;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+
+  @media(max-width: $mantine-breakpoint-sm) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.innerTitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.listItem {
+  font-size: 14px;
+  margin-right: 16px;
+}
+
+.paragraph {
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.politicImg {
+  background-image: url("https://images.unsplash.com/photo-1619793527010-1fdbd2764e6c?q=80&w=1665&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+  width: rem(400px);
+  height: rem(700px);
+
+  @media(max-width: $mantine-breakpoint-sm) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.confidentialImg {
+  background-image: url("https://images.unsplash.com/photo-1664575601786-b00156752b61?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+  width: rem(400px);
+  height: rem(700px);
+
+  @media(max-width: $mantine-breakpoint-sm) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.image1 {
+  background-image: url("https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+  width: 100%;
+  height: rem(400px);
+}
+
+.image {
+  background-image: url("https://images.unsplash.com/photo-1585007600263-71228e40c8d1?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+  width: 100%;
+  height: rem(400px);
+}
+
+.paper {
+  font-weight: bold;
+  font-size: rem(20px);
+  text-align: center;
+
+  @media(max-width: $mantine-breakpoint-xs) {
+    font-size: rem(16px);
+    text-align: justify;
+  }
+}
+
+.contacts {
+  font-weight: bold;
+  font-size: rem(20px);
+}
