@@ -11,6 +11,7 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import { Link } from "react-scroll";
 import classes from "./navigation.module.css";
+import ThemeSwitch from "../themeSwitch/ThemeSwitch";
 
 const Navigation = () => {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
@@ -55,6 +56,7 @@ const Navigation = () => {
               Termo de compromisso
             </Text>
           </Link>
+          <ThemeSwitch />
         </Group>
         <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
       </header>
@@ -70,7 +72,7 @@ const Navigation = () => {
       >
         <ScrollArea h={`clac(100vh - ${rem(80)})`} mx="-md">
           <Divider my="sm" />
-
+          <ThemeSwitch />
           <Link to="wellcome" smooth={true} duration={800}>
             <Text className={classes.link} component="a" onClick={closeDrawer}>
               Boas vindas
