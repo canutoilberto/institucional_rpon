@@ -2,6 +2,8 @@ import { Text, Container, Image } from "@mantine/core";
 import { Link } from "react-scroll";
 import classes from "./footer.module.css";
 
+import logomarca from "assets/img/icons/intranet_logo1_branca.png";
+
 const currentYear = new Date().getFullYear();
 
 const Footer = () => {
@@ -9,10 +11,7 @@ const Footer = () => {
     <footer className={classes.footer}>
       <Container className={classes.inner}>
         <div className={classes.logo}>
-          <Image
-            src="src/assets/img/icons/intranet_logo1_branca.png"
-            alt="Logomarca da Rede Paraíba online"
-          />
+          <Image src={logomarca} alt="Logomarca da Rede Paraíba online" />
           <Text size="xs" c="dimmed" className={classes.description}>
             Nossa ética, nossa conduta
           </Text>

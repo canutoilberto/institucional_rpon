@@ -9,6 +9,11 @@ import {
 } from "@mantine/core";
 import classes from "./importantContacts.module.css";
 
+import gerConteudo from "assets/img/codigo_de_conduta/ger_conteudo.png";
+import gerFinanceiro from "assets/img/codigo_de_conduta/ger_financeiro.png";
+import gerNegocios from "assets/img/codigo_de_conduta/ger_negocios.png";
+import gerTecnologia from "assets/img/codigo_de_conduta/ger_tecnologia.png";
+
 const ImportantContacts = () => {
   return (
     <Container
@@ -22,7 +27,7 @@ const ImportantContacts = () => {
       <Center className={classes.inner}>
         <Flex>
           <div>
-            <Image src="src/assets/img/codigo_de_conduta/ger_conteudo.png" />
+            <Image src={gerConteudo} alt="Foto de Tatiana Ramos" />
             <Text
               variant="gradient"
               gradient={{ from: "pink", to: "yellow" }}
@@ -36,7 +41,7 @@ const ImportantContacts = () => {
         </Flex>
         <Flex>
           <div>
-            <Image src="src/assets/img/codigo_de_conduta/ger_financeiro.png" />
+            <Image src={gerFinanceiro} alt="Foto de Luis Hess" />
             <Text
               variant="gradient"
               gradient={{ from: "pink", to: "yellow" }}
@@ -52,7 +57,7 @@ const ImportantContacts = () => {
       <Center className={classes.inner}>
         <Flex>
           <div>
-            <Image src="src/assets/img/codigo_de_conduta/ger_negocios.png" />
+            <Image src={gerNegocios} alt="Foto de Paulo Eduardo" />
             <Text
               variant="gradient"
               gradient={{ from: "pink", to: "yellow" }}
@@ -66,7 +71,7 @@ const ImportantContacts = () => {
         </Flex>
         <Flex>
           <div>
-            <Image src="src/assets/img/codigo_de_conduta/ger_tecnologia.png" />
+            <Image src={gerTecnologia} alt="Foto de Anderson Silva" />
             <Text
               variant="gradient"
               gradient={{ from: "pink", to: "yellow" }}

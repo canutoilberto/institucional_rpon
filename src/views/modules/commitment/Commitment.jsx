@@ -1,6 +1,8 @@
 import { Container, Divider, Title, Center, Paper, Image } from "@mantine/core";
 import classes from "./commitment.module.css";
 
+import commitment from "assets/img/codigo_de_conduta/compromisso.jpg";
+
 const Commitment = () => {
   return (
     <Container name="commitment" className={classes.content} size="lg" mt={90}>
@@ -8,7 +10,7 @@ const Commitment = () => {
       <Divider my="md" />
       <Center mb={90}>
         <Paper shadow="xl" p="xl">
-          <Image src="src/assets/img/codigo_de_conduta/compromisso.jpg" />
+          <Image src={commitment} alt="Termo de compromisso" />
         </Paper>
       </Center>
     </Container>
