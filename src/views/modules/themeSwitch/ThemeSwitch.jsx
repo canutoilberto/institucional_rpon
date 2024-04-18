@@ -15,11 +15,13 @@ const ThemeSwitch = () => {
 
   return (
     <ActionIcon
+      className={classes.container}
       onClick={() =>
         setColorScheme(computedColorScheme === "light" ? "dark" : "light")
       }
       variant="default"
       size="xl"
+      radius="lg"
       aria-label="Toggle color scheme"
     >
       <RiSunLine className={cx(classes.icon, classes.light)} stroke={1.5} />

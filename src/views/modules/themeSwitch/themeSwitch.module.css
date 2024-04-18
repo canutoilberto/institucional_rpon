@@ -1,3 +1,9 @@
+.container {
+  @media(max-width: $mantine-breakpoint-xs) {
+    left: 85%;
+  }
+}
+
 .icon {
   width: 22px;
   height: 22px;
